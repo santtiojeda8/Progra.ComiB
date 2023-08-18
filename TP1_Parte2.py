@@ -83,16 +83,14 @@ aux=var1
 var1=var2
 print(f"El valor de A es {var1} y el valor de B es {aux}")
 #15
-horas=int(input('horas en la que salio: '))
-minutos=int(input('minutos en la que salio: '))
-segundos=int(input('segundos en la que salio: '))
-segundosLlegada=int(input('en cuantos segundos llego'))
-
-horaLLegada=int(segundosLlegada/3600)#+horas
-minutoLLegada=int(horaLLegada%60)#+minutos
-segundosLlegada= int(minutoLLegada/60)+segundos
-
-print(f"Hora de llegada {horaLLegada+horas}:{minutoLLegada}:{segundosLlegada}")
+horaSalida=float(input('indique hora de salida'))
+minutosSalida=float(input('indique minuto de salida'))
+segundosSalida=float(input('indique segundos de salida'))
+tsegundos=float(input('indique los segundos totales que se demoro para llegar'))
+horaLlegada=tsegundos//3600
+minutosLlegada=(tsegundos%3600)//60
+segundosLlegada=tsegundos%60
+print(f'el ciclista llego a las {horaLlegada+horaSalida} hs, {minutosLlegada+minutosSalida} min y {segundosLlegada+segundosSalida} seg')
 #16
 nombre=input("Ingrese su nombre")
 apellido= input("Ingrese su apellido")
