@@ -75,7 +75,7 @@ caudra2=num1**(1/3)
 print(f"La raíz cúbica de {num1} es: {caudra2} y la raíz del mismo número es: {raiz}")
 #13
 num1=str(23)
-print(num1[::-1])#usando esetea fórmula se escriben todos los caracteres de adelante hacia atras
+print(num1[::-1])#usando esta fórmula se escriben todos los caracteres de adelante hacia atras
 #14
 var1=int(input("Ingrese el valor de A"))
 var2=int(input("Ingrese el valor de B"))
@@ -120,5 +120,3 @@ kilometros=float(input("Ingrese la cantidad de kilómetros que desea recorrrer")
 cantidad_de_consumo=(tanque*consumo)
 cantidad_de_consumo=int(kilometros/cantidad_de_consumo)+1
 print(f"Para recorrer {kilometros} kilomtros va a nececsitar {cantidad_de_consumo} tanque/s de combustible")
-
-###ssss
