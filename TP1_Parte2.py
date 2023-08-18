@@ -121,3 +121,4 @@ cantidad_de_consumo=(tanque*consumo)
 cantidad_de_consumo=int(kilometros/cantidad_de_consumo)+1
 print(f"Para recorrer {kilometros} kilomtros va a nececsitar {cantidad_de_consumo} tanque/s de combustible")
 
+###ssss
