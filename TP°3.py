@@ -94,4 +94,35 @@ while(word.lower() != "salir") :
 print("Salió del programa")
 
 #14
+number1=int(input("Ingrese el primer números par"))
+number2=int(input("Ingrese el sesgundonúmeros par"))
+if (number1%2 == 0):
+    print(f"El número {number1} es par")
+if (number2%2 == 0):
+    print(f"El número {number2} es par")
+
+#15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
