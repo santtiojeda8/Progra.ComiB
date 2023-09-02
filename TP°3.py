@@ -47,7 +47,11 @@ for i in range(1,10):
         print(i*j)
 
 #8
-num=int(input("Ingrese un número entero"))
+num=int(input("Ingrese un numero"))
+for i in range(1,num+1,2):
+    for j in range(1,i+1,2):
+        print(j,end=" ")
+    print(" ")
 
 #9
 password=input("Ingrese su nueva contraseña")
