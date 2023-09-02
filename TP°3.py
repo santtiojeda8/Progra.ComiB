@@ -102,27 +102,113 @@ if (number2%2 == 0):
     print(f"El número {number2} es par")
 
 #15
+number=int(input("Ingrese un número mayor a 0"))
+print(f"El número {number} es divisible por: ",end="")
+for i in range(number+1):
+    if (number%(i+1) == 0):
+        print(i+1,end=" ")
 
+#16
+number=int(input('ingrese cantidad de numeros a ingresar: '))
+list_of_number=[]
+contNeg=0
+for i in range(1,number+1):
+    num=int(input(f'ingrese numero {i}:'  ))
+    list_of_number.append(num)
+print(list_of_number)    
+for n in list_of_number:
+    if n<0:
+        contNeg+=1    
+print(f'en total hay {contNeg} numeros negativos')
 
+#17
+vowels=set() #set no permite elementos repetidos
+sentence=input('ingrese frase: ')
+for v in sentence:
+    if v=='a' or v=='e' or v=='i' or v=='o' or v=='u':
+        vowels.add(v)
+print(f'las vocales en la oracion son {vowels}')        
 
+#18
+quantity=int(input("Ingrese la cantidad de veces a repetir la secuencia fibonacci"))
+fibonacci=[]
+a=0
+b=1
+for i in range(quantity):
+    fibonacci.append(a)
+    a,b=b,a+b
+print(fibonacci)
 
+#19
+money_box=int(input("Ingrese la cantidad de dinero que desea ahorrar en la alcancía"))
+total_money=0
+actually_money=0
+while money_box>total_money:
+    actually_money=int(input("Cuanto dinero desea ingresar a la alcancía?"))
+    if (actually_money<0):
+        print("La cantidad de dinero ingresada es incorrecta, vuelva a ingresar")
+    else:
+        total_money+=actually_money
+    print(f"LLeva ahorrado {total_money}")
+print(f"El dinero total ahorrado es de ${total_money}")
 
+#20
+number=int(input("Ingrese un número entero"))
+account=0
+print("Escriba 0 cuando desee salir del programa")
+while number!=0:
+    account+=number
+    number=int(input("Ingrese un número entero"))
+print(f"La suma de todos los número ingresados es {account}")
 
+#21
+number=int(input("Ingrese un número entero"))
+bigger=0
+print("Escriba 0 cuando desee salir del programa")
+while number!=0:
+    if number>bigger:
+        bigger=number
+    number=int(input("Ingrese un número entero"))
+print(f"El número entero mas grande  es {bigger}")
 
+#22
+number=int(input("Ingrese un número entero"))
+account=0
+even_numbers=0
+print("Para salir del programa debe ingresar -1")
+while number!= -1:
+    account+=number
+    if number%2 == 0:
+        even_numbers+=1
+    number=int(input("Ingrese un número entero"))
+print(f"La suma de todods los números ingresados es {account} y dentro de los números ingresados hay {even_numbers} números pares")
 
+#23
+ammount=int(input("Ingrese el monto de la compra"))
+total_ammount=0
+print("Escriba 0 cuando desee salir del programa")
+while ammount!=0:
+    total_ammount+=ammount
+    ammount=int(input("Ingrese el monto de la compra"))
+print(f"El monto total de la compra es {total_ammount}")
 
+#24
+ammount=int(input("Ingrese el monto de la compra"))
+total_ammount=0
+print("Escriba 0 cuando desee salir del programa")
+while ammount!=0:
+    if ammount<0:
+        print("El monto ingresado es negativo")
+    else:
+        total_ammount+=ammount
+    ammount=int(input("Ingrese el monto de la compra"))
+if total_ammount>1000:
+    total_ammount=total_ammount*0.9
+print(f"El monto total a pagar es de ${total_ammount}")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#25
+number=int(input("Ingrese un número para saber su factorial"))
+account=1
+for i in range(1,number+1):
+    account=account*i
+print(f"El númeroi factorial de {number} es {account}")
