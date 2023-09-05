@@ -12,7 +12,7 @@ print(resta,multi,divi)
 #5
 nombre = "Santiago"
 #6
-precio = 150
+precio = 15.5
 #7
 descuento = 0.1
 #8

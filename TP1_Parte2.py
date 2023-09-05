@@ -6,7 +6,10 @@ area=base*altura
 #2
 cateto1=float(input("ingrese cateto 1"))
 cateto2=float(input("ingrese cateto 2"))
-hipotenusa=(cateto1*2)+(cateto2*2)
+longitud=(cateto1**2)+(cateto2**2)
+raiz=1/2
+hipotenusa=longitud**raiz
+print(hipotenusa)
 #3
 num1=float(input("ingrese numero1"))
 num2=float(input("ingrese numero2"))
