@@ -63,9 +63,8 @@ print("Contraseña nueva lamacenada correctamente")
 #10
 number=int(input("Ingrese nu número entero para saber si es primo o no"))
 account=0
-sss=0
 for i in range(number+1):
-    if (number%(i+1) == sss):
+    if (number%(i+1) == 0):
         account+=1
 
 if ((account==2)):
