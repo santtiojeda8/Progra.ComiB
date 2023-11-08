@@ -16,7 +16,6 @@ else:
     print("No se encontro el gen mutante dentro del ADN del ser humano")
 
 
-
 #ADN DE PRUEBA 
 #El suguiente ADN nos devuelve que es mutante
 #dna=[
@@ -36,4 +35,4 @@ else:
 #    "caccaa",
 #    "tgaagc",
 #    "accaac",
-# ]
+# ] 
